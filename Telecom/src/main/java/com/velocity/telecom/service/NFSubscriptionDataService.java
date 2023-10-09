@@ -1,5 +1,5 @@
 package com.velocity.telecom.service;
 
-public class NFSubscriptionDataService {
+public interface NFSubscriptionDataService {
 
 }
