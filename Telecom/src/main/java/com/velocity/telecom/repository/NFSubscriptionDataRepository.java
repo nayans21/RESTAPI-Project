@@ -1,5 +1,11 @@
 package com.velocity.telecom.repository;
 
-public interface NFSubscriptionDataRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.velocity.telecom.model.NFSubscriptionData;
+
+@Repository
+public interface NFSubscriptionDataRepository extends JpaRepository<NFSubscriptionData, Integer>{
 
 }
