@@ -25,7 +25,7 @@ public class NFSubscriptionRestController {
 		NFSubscriptionData nfSub = nfSubscriptionDataService.updateNFSubscriptionData(nfSubscriptionData);
 		List <NetworkSliceCondition> networkSliceList = nfSubscriptionData.getNetworkSliceConditions();
 		for(NetworkSliceCondition networkSlice : networkSliceList) {
-			networkSlice.setNfstatusNotificationUriId(nfSubscriptionData.getNfstatusNotificationUri());
+			
 			networkSliceConditionService.updateNetworkSliceCondition(networkSlice);
 		}
 		return nfSub;
