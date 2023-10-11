@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.velocity.telecom.exception.CanNotPerformOperation;
 import com.velocity.telecom.model.NFSubscriptionData;
 import com.velocity.telecom.model.NetworkSliceCondition;
 import com.velocity.telecom.service.NFSubscriptionDataService;
@@ -54,7 +55,7 @@ public class NFSubscriptionRestController {
 			return nfSubscriptionDataService.updateNFSubscriptionData(nfSubscriptionData);
 		}
 		else {
-			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Network Slice Condition data is not required.");
+			throw new CanNotPerformOperation("Network Slice Condition data is not required");
 		}		
 	}
 }

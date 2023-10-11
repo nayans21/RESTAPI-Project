@@ -1,8 +1,11 @@
 package com.velocity.telecom.exception;
 
-public class NoNFSubscriptionDataFound extends RuntimeException{
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
+
+public class NoNFSubscriptionDataFound extends ResponseStatusException{
 
 	public NoNFSubscriptionDataFound(String errorMessage) {
-		super(errorMessage);
+		super(HttpStatus.BAD_REQUEST,errorMessage);
 	}
 }

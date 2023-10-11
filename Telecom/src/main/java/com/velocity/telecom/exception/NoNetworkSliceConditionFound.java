@@ -1,9 +1,12 @@
 package com.velocity.telecom.exception;
 
-public class NoNetworkSliceConditionFound extends RuntimeException{
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
+
+public class NoNetworkSliceConditionFound extends ResponseStatusException{
 	
 	public NoNetworkSliceConditionFound(String errorMessage) {
-		super(errorMessage);
+		super(HttpStatus.BAD_REQUEST,errorMessage);
 	}
 
 }
