@@ -17,5 +17,10 @@ public class NetworkSliceConditionServiceImpl implements NetworkSliceConditionSe
 		
 		return networkSliceConditionRepository.save(networkSliceCondition);
 	}
+	public void deleteNetworkSliceCondition(NetworkSliceCondition networkSliceCondition) {
+		
+		 networkSliceConditionRepository.delete(networkSliceCondition);
+	}
+	
 
 }

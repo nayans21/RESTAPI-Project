@@ -17,4 +17,10 @@ public class NFSubscriptionDataServiceImpl implements NFSubscriptionDataService 
 		
 		return nfSubscriptionDataRepository.save(nfSubscriptionData);
  }
+
+	public void deleteNFSubscriptionData(NFSubscriptionData nfSubscriptionData) {
+
+	nfSubscriptionDataRepository.delete(nfSubscriptionData);
+}
+	
 }
