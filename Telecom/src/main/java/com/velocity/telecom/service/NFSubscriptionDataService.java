@@ -5,5 +5,6 @@ import com.velocity.telecom.model.NFSubscriptionData;
 public interface NFSubscriptionDataService {
 	
 	public NFSubscriptionData updateNFSubscriptionData(NFSubscriptionData nfSubscriptionData);
+	public void deleteNFSubscriptionData(NFSubscriptionData nfSubscriptionData);
 
 }
