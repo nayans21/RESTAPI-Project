@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.velocity.telecom.exception.CanNotPerformOperation;
 import com.velocity.telecom.exception.NoNFSubscriptionDataFound;
 import com.velocity.telecom.model.NFSubscriptionData;
 import com.velocity.telecom.model.NetworkSliceCondition;
@@ -48,6 +49,7 @@ public class NFSubscriptionDataServiceImpl implements NFSubscriptionDataService 
 		if(!lst.isEmpty()) {
 			String message = "Cannot delete as some records in the network_slice_condition table is present ";
 			message= message + "for NfstatusNotificationUri "+uri;
+			throw new CanNotPerformOperation(message);
 		}
 		else
 			nfSubscriptionDataRepository.delete(nfSubscriptionData);
