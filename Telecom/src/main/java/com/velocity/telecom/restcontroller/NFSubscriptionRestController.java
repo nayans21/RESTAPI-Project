@@ -2,6 +2,7 @@ package com.velocity.telecom.restcontroller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,9 @@ import com.velocity.telecom.service.NetworkSliceConditionService;
 @RequestMapping("/nfSubscription")
 public class NFSubscriptionRestController {
 
+	@Autowired
 	private NFSubscriptionDataService nfSubscriptionDataService;
+	@Autowired
 	private NetworkSliceConditionService networkSliceConditionService;
 	
 	@PutMapping("/update")
