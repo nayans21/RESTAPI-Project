@@ -1,11 +1,14 @@
 package com.velocity.telecom.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.velocity.telecom.model.NetworkSliceCondition;
 import com.velocity.telecom.repository.NetworkSliceConditionRepository;
+import com.velocity.telecom.service.NetworkSliceConditionService;
 
-public class NetworkSliceConditionServiceImpl {
+@Service
+public class NetworkSliceConditionServiceImpl implements NetworkSliceConditionService {
 	
 	@Autowired
 	private NetworkSliceConditionRepository networkSliceConditionRepository;
