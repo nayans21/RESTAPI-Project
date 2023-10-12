@@ -25,7 +25,7 @@ public class NFSubscriptionData {
 	private List<NetworkSliceCondition> networkSliceConditions;
 
 		
-	public String getNfstatusNotificationUriId() {
+	public String getNfstatusNotificationUri() {
 		return nfstatusNotificationUri;
 	}
 
