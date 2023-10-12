@@ -15,7 +15,6 @@ import com.velocity.telecom.service.NFSubscriptionDataService;
 
 @Service
 public class NFSubscriptionDataServiceImpl implements NFSubscriptionDataService {
-	
 	@Autowired
 	private NFSubscriptionDataRepository nfSubscriptionDataRepository;
 	
@@ -53,6 +52,6 @@ public class NFSubscriptionDataServiceImpl implements NFSubscriptionDataService 
 		}
 		else
 			nfSubscriptionDataRepository.delete(nfSubscriptionData);
-}
+  }
 	
 }

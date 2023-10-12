@@ -25,12 +25,12 @@ public class NFSubscriptionData {
 	private List<NetworkSliceCondition> networkSliceConditions;
 
 		
-	public String getNfstatusNotificationUri() {
-		return nfstatusNotificationUri;
+	public String getNfstatusNotificationUriId() {
+		return nfstatusNotificationUriId;
 	}
 
 	public void setNfstatusNotificationUri(String nfstatusNotificationUri) {
-		this.nfstatusNotificationUri = nfstatusNotificationUri;
+		this.nfstatusNotificationUriId = nfstatusNotificationUriId;
 	}
 
 	public int getSubscriptionId() {
@@ -99,7 +99,7 @@ public class NFSubscriptionData {
 
 	@Override
 	public String toString() {
-		return "NFSubscriptionData [nfstatusNotificationUri=" + nfstatusNotificationUri + ", subscriptionId="
+		return "NFSubscriptionData [nfstatusNotificationUri=" + nfstatusNotificationUriId + ", subscriptionId="
 				+ subscriptionId + ", reqestestedNfType=" + reqestestedNfType + ", validityTime=" + validityTime
 				+ ", isLocalSubscription=" + isLocalSubscription + ", subscriptionCondition=" + subscriptionCondition
 				+ ", reqestestedNfFrequency=" + reqestestedNfFrequency + ", subscriptionStatus=" + subscriptionStatus
