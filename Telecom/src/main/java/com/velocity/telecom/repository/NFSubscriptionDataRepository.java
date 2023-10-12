@@ -8,4 +8,5 @@ import com.velocity.telecom.model.NFSubscriptionData;
 @Repository
 public interface NFSubscriptionDataRepository extends JpaRepository<NFSubscriptionData, Integer>{
 
+	public void deleteBynfstatusNotificationUriId(String nfstatusNotificationUriId);
 }
