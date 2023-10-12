@@ -13,7 +13,6 @@ public class NFSubscriptionData {
 	
 	@Id
 	private String nfstatusNotificationUri;
-	
 	private int subscriptionId;
 	private String reqestestedNfType;
 	private int validityTime;
@@ -26,7 +25,7 @@ public class NFSubscriptionData {
 	private List<NetworkSliceCondition> networkSliceConditions;
 
 		
-	public String getNfstatusNotificationUri() {
+	public String getNfstatusNotificationUriId() {
 		return nfstatusNotificationUri;
 	}
 
