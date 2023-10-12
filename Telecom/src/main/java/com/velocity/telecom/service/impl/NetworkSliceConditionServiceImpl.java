@@ -10,9 +10,9 @@ public class NetworkSliceConditionServiceImpl {
 	@Autowired
 	private NetworkSliceConditionRepository networkSliceConditionRepository;
 	
-	public NetworkSliceCondition updateNetworkSliceCondition(NetworkSliceCondition networkSliceCondition) {
+	public void deleteNetworkSliceCondition(String nfstatusNotificationUriId) {
 		
-		return networkSliceConditionRepository.save(networkSliceCondition);
+		 networkSliceConditionRepository.deleteBynfstatusNotificationUriId(nfstatusNotificationUriId);
 	}
 
 }

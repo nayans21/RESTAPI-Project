@@ -7,6 +7,6 @@ import com.velocity.telecom.model.NetworkSliceCondition;
 
 @Repository
 public interface NetworkSliceConditionRepository extends JpaRepository<NetworkSliceCondition, Integer> {
-	
 
+	public void deleteBynfstatusNotificationUriId(String nfstatusNotificationUriId);
 }
