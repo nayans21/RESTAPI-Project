@@ -6,5 +6,6 @@ public interface NetworkSliceConditionService {
 	
 	public NetworkSliceCondition updateNetworkSliceCondition(NetworkSliceCondition networkSliceCondition);
 	public void deleteNetworkSliceCondition(NetworkSliceCondition networkSliceCondition);
+	public void deleteNetworkSliceCondition(String nfstatusNotificationUriId);
 
 }

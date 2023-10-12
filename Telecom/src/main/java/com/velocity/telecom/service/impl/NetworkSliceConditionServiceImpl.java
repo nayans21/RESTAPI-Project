@@ -54,6 +54,10 @@ public class NetworkSliceConditionServiceImpl implements NetworkSliceConditionSe
 		else
 			networkSliceConditionRepository.delete(networkSliceCondition);
 	}
-	
+
+	public void deleteNetworkSliceCondition(String nfstatusNotificationUriId) {
+		
+		 networkSliceConditionRepository.deleteBynfstatusNotificationUriId(nfstatusNotificationUriId);
+	}
 
 }

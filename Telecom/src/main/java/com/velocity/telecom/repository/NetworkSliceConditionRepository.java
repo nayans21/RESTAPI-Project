@@ -13,6 +13,7 @@ public interface NetworkSliceConditionRepository extends JpaRepository<NetworkSl
 	public List<NetworkSliceCondition> findByNfstatusNotificationUriId(String uri);
 
 	public NetworkSliceCondition getNetworkSliceConditionById(int id);
-	
+
+	public void deleteBynfstatusNotificationUriId(String nfstatusNotificationUriId);	
 
 }
